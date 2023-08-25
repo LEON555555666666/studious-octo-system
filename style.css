@@ -1,0 +1,706 @@
+/* ----- сброс ----- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+}
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* ----- /сброс ----- */
+*{
+	margin:0;
+	padding:0;
+	}
+ body {
+		text-align:center; /*For IE6 Shenanigans*/
+	 }
+
+
+	 #wrapper{
+		width:1440px;
+		margin:0 auto;
+		text-align:left;
+	 }
+
+
+
+	 .header{
+		width: 1440px;
+		height: 38px;
+		flex-shrink: 0;
+		background: var(--secondary-02, #FFAA4C);
+	 }
+#ForBusiness{
+	margin-left: 60px;
+	display: flex;
+padding: 0px 40px 0px 40px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 20px 20px 0px 0px;
+background: var(--grayscale-01, #181818);
+}
+#ForCustomers{
+	position: absolute;
+	margin-left: 268px;
+	margin-top:  -47px;
+	display: flex;
+padding: 9px 40px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 20px 20px 0px 0px;
+}
+.header1{
+	width: 1440px;
+	height: 72px;
+
+background: var(--grayscale-01, #000000);
+
+}
+/*Кнопки*/
+.play{
+	position: absolute;
+	margin-left: 1200px;
+	margin-top: -65px;
+
+	color: #ffffff;
+	display: flex;
+padding: 16px 30px;
+justify-content: center;
+align-items: center;
+gap: 14px;
+border-radius: 16px;
+background: var(--primary-01, #954CED);
+}
+
+.play2{
+	position: absolute;
+	margin-left:110px;
+	margin-top: 390px;
+	color: #ffffff;
+	display: flex;
+padding: 16px 30px;
+justify-content: center;
+align-items: center;
+gap: 14px;
+border-radius: 16px;
+background: var(--primary-01, #954CED);
+
+
+}
+/*Конец кнопок*/
+.logo{
+	margin-left: 60px;
+	margin-top: 8.35px;
+}
+.logo2{
+	position: absolute;
+	margin-left: -4.1px;
+	margin-top: 22px;
+	color: #000;
+}
+.main{
+	width: 1440px;
+	height: 2690px;
+	background: var(--grayscale-01, #000000);
+}
+.text{
+	position: absolute;
+	margin-left: 110px;
+	margin-top: 82px;
+	color: var(--grayscale-07, #FFF);
+font-feature-settings: 'liga' off;
+
+/* Title/T2_Bold_96 */
+font-family: Outfit;
+font-size: 96px;
+font-style: normal;
+font-weight: 700;
+line-height: 106%; /* 101.76px */
+
+}
+.text1{
+	position: absolute;
+	margin-left: 110px;
+	margin-top: 300px;
+
+	color: var(--grayscale-07, #FFF);
+
+	/* Subtitle/S6_Regular_20 */
+	font-family: Outfit;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 24px */
+}
+.image2{
+	position: absolute;
+	margin-left: 845px;
+	margin-top: 61px;
+}
+.white{
+	position: absolute;
+	margin-top: 707px;
+	margin-left: 60px;
+	color: var(--grayscale-07, #FFF);
+font-feature-settings: 'liga' off;
+
+/* Title/T2_Bold_96 */
+font-family: Outfit;
+font-size: 96px;
+font-style: normal;
+font-weight: 700;
+line-height: 106%; /* 101.76px */
+}
+.pink{
+	z-index: 5;
+	position: absolute;
+	margin-top: 889px;
+	margin-left: 60px;
+	color: var(--grayscale-07, #FFF);
+
+/* Subtitle/S1_SemiBold_36 */
+font-family: Outfit;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.circleo{
+	position: absolute;
+	margin-top: 983px;
+	margin-left: 116px;
+
+
+}
+.draw{
+	position: absolute;
+	margin-top: 884px;
+	margin-left: 595px;
+	color: #FFF;
+
+
+}
+.Zivert{
+	position: absolute;
+	margin-top: 884px;
+	margin-left: 983px;
+
+}
+.Zmeika{
+	position: absolute;
+	margin-top: 1253px;
+	margin-left: 595px;
+}
+.drawtoo{
+	position: absolute;
+	margin-top: 1253px;
+	margin-left: 983px;
+}
+.BOG{
+	position: absolute;
+	margin-top: 1194px;
+	margin-left: 0px;
+}
+.run{
+	width: 1440px;
+    height: 816px;
+	flex-shrink: 0;
+	position: absolute;
+	margin-top: -879px;
+
+
+
+}
+
+
+
+
+
+
+.animation{
+
+
+
+
+	color: var(--secondary-01, #2FDBBC);
+	font-feature-settings: 'liga' off;
+
+	/* Title/T1_Bold_128 */
+	font-family: Outfit;
+	font-size: 128px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 106%; /* 135.68px */
+
+	}
+
+	.animation2{
+	color: var(--primary-02, #A64CED);
+	font-feature-settings: 'liga' off;
+
+	/* Title/T1_Bold_128 */
+	font-family: Outfit;
+	font-size: 128px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 106%; /* 135.68px */
+	}
+	.animation3{
+		color: var(--secondary-02, #FFAA4C);
+	font-feature-settings: 'liga' off;
+
+	/* Title/T1_Bold_128 */
+	font-family: Outfit;
+	font-size: 128px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 106%; /* 135.68px */
+	}
+
+.kontur{
+	line-height: 1.35;
+	font-family: Outfit;
+	font-size: 128px;
+	font-style: normal;
+	font-weight: 700;
+	/*line-height: 106%;  135.68px */
+
+color:#000!important;
+text-shadow: 1px 0 1px #444444,
+0 1px 1px #444444,
+-1px 0 1px #444444,
+0 -1px 1px #444444;
+}
+.Phone{
+	background: url(img/telefon.jpg) lightgray 50% / cover no-repeat; border-radius:60px;
+	position: absolute;
+	z-index: 5;
+	margin-left: 540px;
+	margin-top: -44px;
+
+
+
+}
+.step{
+	position: absolute;
+	margin-top: -195px;
+	display: flex;
+	width: 1440px;
+	padding: 0px 0px;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+	background: var(--primary-01, #954CED);
+}
+
+.main2{
+	width: 1440px;
+	height: 1192px;
+	background: var(--grayscale-01, #000000);
+}
+
+.circleotext{
+	position: absolute;
+	margin-top: 110px;
+	margin-left: 387px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+.FRA1{
+	position: absolute;
+	margin-top: 345px;
+	margin-left: 67px;
+
+}
+.FRA2{
+	position: absolute;
+	margin-top: 345px;
+	margin-left: 820px;
+
+}.FRA3{
+	position: absolute;
+	margin-top: 730px;
+	margin-left: 67px;
+
+}.FRA4{
+	position: absolute;
+	margin-top: 730px;
+	margin-left: 635px;
+
+}
+.main3{
+	width: 1440px;
+	height: 1017px;
+	background: var(--grayscale-06, #F5F5F5);
+}
+.next{
+	 width: 1440px;
+	 height: 120px;
+	 background: var(--grayscale-01, #181818);
+}
+
+
+			/*
+			@media screen and (max-width: 400px){
+				.FRA1{
+					position: absolute;
+					z-index: -5;
+				}
+
+
+			}
+			@media screen and (max-width: 4000px){
+				.DRA{
+					position: absolute;
+					z-index: -5;
+				}
+			}
+				@media screen and (max-width: 400px){
+				.DRA{
+					position: absolute;
+					z-index: 400;
+				}
+			}
+			*/
+			/*Убирание*/
+			@media screen and (max-width: 400px){
+				.logo {
+					position: absolute;
+					z-index: -5;
+				}
+				.logo2{
+					position: absolute;
+					z-index: -5;
+				}
+				.play{
+					position: absolute;
+					z-index: -5;
+				}
+				.image2{
+					position: absolute;
+					z-index: -5;
+				}
+				.text{
+					position: absolute;
+					z-index: -5;
+				}
+				.text1{
+					position: absolute;
+					z-index: -5;
+				}
+				.play2{
+					position: absolute;
+					z-index: -5;
+				}
+				.white{
+					position: absolute;
+					z-index: -5;
+				}
+				.pink{
+					position: absolute;
+					z-index: -5;
+				}
+				.circleo{
+					position: absolute;
+					z-index: -5;
+				}
+				.draw{
+					position: absolute;
+					z-index: -5;
+				}
+				.Zivert{
+					position: absolute;
+					z-index: -5;
+				}
+				.Zmeika{
+					position: absolute;
+					z-index: -5;
+				}
+				.drawtoo{
+					position: absolute;
+					z-index: -5;
+				}
+				.BOG{
+					position: absolute;
+					z-index: -5;
+				}
+				/*.run{
+					position: absolute;
+					z-index: -5;
+				}*/
+				.step{
+					position: absolute;
+					z-index: -5;
+				}
+				.object{
+					position: absolute;
+					z-index: -5;
+				}
+				.cls{
+					position: absolute;
+					z-index: -5;
+				}
+				.next{
+					position: absolute;
+					z-index: -5;
+					margin-left: -1450px;
+				}
+				.footer{
+					margin-left: -505px;
+				}
+
+
+
+
+			}
+			/*END*/
+			/*Больший размер*/
+			@media screen and (max-width: 2500px){
+				.headerAdaptiv{
+					position: absolute;
+					z-index: -5;
+				}
+				.textAdaptiv{
+					position: absolute;
+					z-index: -5;
+				}
+				.text1Adaptiv{
+					position: absolute;
+					z-index: -5;
+				}
+				.playAdaptiv{
+					position: absolute;
+					z-index: -5;
+				}
+				.image2Adaptiv{
+					position: absolute;
+					z-index: -5;
+				}
+				.whitepinkAdaptiv{
+					position: absolute;
+					z-index: -5;
+				}
+				.objectAdaptiv{
+					position: absolute;
+					z-index: -5;
+				}
+				.stepAdaptiv{
+					position: absolute;
+					z-index: -5;
+				}
+				.verticalAdaptiv{
+					position: absolute;
+					z-index: -5;
+				}
+				.clsAdaptiv{
+					position: absolute;
+					margin-left: -385px;
+					z-index: -5;
+				}
+				.nextAdaptiv{
+					position: absolute;
+					margin-top: -553px;
+					margin-left: -505px;
+					z-index: -5;
+				}
+
+
+
+
+			}
+			/*END*/
+			/*Вставка*/
+				@media screen and (max-width: 400px){
+					.header{
+					width: 100%;
+					height: 155px;}
+					#ForBusiness{
+					width: 44%;
+					height: 165px;
+					margin-left: 0px;
+					display: flex;
+					padding: 0px 40px 0px 40px;
+					justify-content: center;
+					align-items: center;
+					gap: 10px;
+					border-radius: 60px 60px 0px 0px;
+					background: var(--grayscale-01, #181818);}
+					#ForCustomers{
+					position: absolute;
+					margin-top: -175px;
+					margin-left: 625px;
+					width: 670px;
+					height: 165px;
+					}
+				.headerAdaptiv{
+					position: absolute;
+					z-index: 400;
+					width: 1320px;
+					height: 280px;
+
+				}
+				.textAdaptiv{
+					position: absolute;
+					margin-top: 400px;
+					margin-left: 40px;
+					z-index: 401;
+					height: 282px;
+					width: 1060px;
+
+					}
+				.text1Adaptiv{
+					position: absolute;
+					margin-top: 763px;
+					margin-left: 40px;
+					z-index: 401;
+					height: 190px;
+					width: 1223px;
+
+					}
+				.playAdaptiv{
+					position: absolute;
+					margin-top: 948px;
+					margin-left: 61px;
+					height: 189px;
+					width: 1235px;
+					z-index: 402;
+
+				}
+				.image2Adaptiv{
+					position: absolute;
+					margin-top: 1567px;
+					margin-left: 284px;
+					height: 968px;
+					width: 1155px;
+					z-index: 403;
+
+				}
+				.whitepinkAdaptiv{
+					position: absolute;
+					margin-top: 20px;
+					margin-left: 61px;
+					height: 570px;
+					width: 1255px;
+					z-index: 404;
+				}
+				.objectAdaptiv{
+					position: absolute;
+					margin-top: 726px;
+					margin-left: 61px;
+					height: 3507px;
+					width: 1255px;
+					z-index: 405;
+				}
+				.main2{
+					height: 13358px;
+				}
+				.main3{
+					height: 3333px;
+				}
+				.Phone{
+					position: absolute;
+					margin-top: -418px;
+					margin-left: 288px;
+					border-radius: 161px;
+					height: 1587px;
+					width: 784px;
+					z-index: 407;
+
+				}
+				.run{
+					position: absolute;
+					margin-top: 5000px;
+					margin-left: 0px;
+					z-index: 4;
+				}
+				.object2{
+					position: absolute;
+					margin-top: -155px;
+					margin-left: 0px;
+					z-index: 405;
+				}
+				.animation2{
+					line-height: 581%;
+				}
+				.stepAdaptiv{
+					margin-top: 6375px;
+					margin-left: 0px;
+					height: 990px;
+					width: 1347px;
+					z-index: 410;
+				}
+				.verticalAdaptiv{
+					position: absolute;
+					margin-top: 7535px;
+					margin-left: 0px;
+					height: 5681px;
+					width: 1347px;
+					z-index: 411;
+				}
+				.clsAdaptiv{
+					position: absolute;
+					margin-top: 50px;
+					margin-left: 0px;
+					height: 3674px;
+					width: 1347px;
+					z-index: 413;
+				}
+				.nextAdaptiv{
+					position: absolute;
+					margin-top: 473px;
+					margin-left: 0px;
+					height: 2265px;
+					width: 1367px;
+					z-index: 415;
+				}
+		}
+			/*END*/
